@@ -36,3 +36,9 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+
+seeds:
+  demo_project:
+    taxi_zone_lookup:
+      +column_types:
+        locationid: numeric
